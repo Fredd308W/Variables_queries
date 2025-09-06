@@ -1,0 +1,33 @@
+/* Declaramos variables globales */
+:root {
+  --color-fondo: lightblue;
+  --tamano-texto: 18px;
+}
+
+body {
+  background-color: var(--color-fondo);
+  font-size: var(--tamano-texto);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: darkblue;
+}
+
+p {
+  color: #333;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+  :root {
+    --color-fondo: lightcoral;  /* Sobrescribimos variable */
+    --tamano-texto: 14px;
+  }
+
+  h1 {
+    color: white;
+  }
+}
